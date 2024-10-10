@@ -1,8 +1,20 @@
 body {
-    background: lightseagreen;
+    background: rgb(93, 60, 213);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 h1 {
     color:maroon;
     text-align:center;
+}
+
+.projects {    
+    display:flex; 
+    flex-wrap:wrap; 
+}  
+.projects {
+    width: 30%;
+    margin: 10px;
+    padding: 20px 10px;
+    background: rgb(20, 132, 183); /* pick a color */
+    border-radius: 25%;
 }
