@@ -15,8 +15,8 @@ h1 {
     width: 30%;
     margin: 10px;
     padding: 20px 10px;
-    background: rgb(20, 132, 183); /* pick a color */
-    border-radius: 25%;
+    background: rgb(205, 16, 16); 
+    border-radius: 30%;
 }
 .project img{
     width: 300px;
@@ -26,6 +26,14 @@ h1 {
     display: block;
     margin: auto;
 }
+a { 
+    text-decoration: none;
+    color: rgb(230, 244, 122);
+    }
+    .project p { 
+    text-align: center;
+    margin: 15x;
+    }
 about{
     display:flex;
     flex-wrap:wrap;
