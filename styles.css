@@ -1,9 +1,9 @@
 body {
-    background: rgb(220, 133, 47);
+    background: rgb(223, 255, 235,1);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 h1 {
-    color:maroon;
+    color:rgb(25, 25, 112,1);
     text-align:center;
 }
 
@@ -15,20 +15,20 @@ h1 {
     width: 30%;
     margin: 10px;
     padding: 20px 10px;
-    background: rgb(205, 16, 16); 
+    background: rgba(255, 111, 97, 1); 
     border-radius: 30%;
 }
 .project img{
     width: 300px;
     height: 300px;
     margin: 10px;
-    border: 2px solid rgb(215, 33, 179);
+    border: 2px solid rgb(255, 193,204,1);
     display: block;
     margin: auto;
 }
 a { 
     text-decoration: none;
-    color: rgb(230, 244, 122);
+    color: rgb(47, 79, 79,1);
     }
 .project p { 
 text-align: center;
