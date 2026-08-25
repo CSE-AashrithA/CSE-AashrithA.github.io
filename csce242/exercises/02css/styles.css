@@ -1,0 +1,33 @@
+/* Structural */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(images/Savannah.jpeg);
+    background-size: cover;
+}
+
+#content {
+    background-color:rgba(255,255, 255, 0.8);
+    width:70%;
+    padding:5px;
+    margin:auto;    /* center in the page */
+    border-radius:5px;
+    box-shadow: 5px 5px greenyellow;
+}
+
+header, main, footer {
+    padding: 5px;
+}
+
+header, footer {
+    background:#30728C;
+    color:whitesmoke;
+}
+
+
+/* Navigation */
+
+
+/* Typography */
+h1 {
+    color:burlywood;
+}
