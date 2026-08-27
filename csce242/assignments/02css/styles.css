@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("images/soccerbackground.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #1b2a1b;
+}
+
+#content {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #1f5c3a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#page-title {
+    color: #f5c542;
+}
+
+header h2 {
+    color: white;
+}
+
+h2 {
+    color: #1f5c3a;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 8px;
+    border: 3px solid #1f5c3a;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #1f5c3a;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #1f5c3a;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    background-color: #e8f3ea;
+}
