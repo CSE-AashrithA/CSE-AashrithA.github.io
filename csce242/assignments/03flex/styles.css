@@ -1,0 +1,166 @@
+/* Structure */
+body {
+    background-color: #f2f2e9;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#content {
+    background-color: #f5f3d5;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+#main-header {
+    text-align: center;
+}
+
+#main-header h1 {
+    color: #5b8790;
+    margin: 0;
+    padding: 25px;
+}
+
+main {
+    margin-top: 7px;
+}
+
+#sidebar {
+    background-color: #e7b4b6;
+    padding: 15px 5px;
+    text-align: center;
+}
+
+#sidebar h2 {
+    color: #5b8790;
+}
+
+#info {
+    flex: 1;
+}
+
+#quick-links,
+#main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+/* Navigation */
+#main-nav li {
+    background-color: #d88386;
+    border-bottom: 1px solid white;
+    padding: 12px;
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#quick-links a {
+    background-color: white;
+    border-bottom: 1px solid #e7b4b6;
+    color: #d88386;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* Top sections */
+.card {
+    background-color: #a7c2bd;
+    margin-bottom: 7px;
+}
+
+.card h3 {
+    background-color: #5b8790;
+    color: white;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+}
+
+.card img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+/* Articles */
+article {
+    background-color: #5b8790;
+    margin-top: 7px;
+    padding: 10px;
+}
+
+article img {
+    display: block;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+    width: 200px;
+}
+
+.article-text {
+    color: white;
+    padding: 10px;
+}
+
+.article-text h3 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #d88386;
+    color: white;
+    margin-top: 7px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Large screen */
+@media (min-width: 1000px) {
+    .columns {
+        display: flex;
+    }
+
+    #main-nav li {
+        border-bottom: 0;
+        flex: 1;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    #top-sections {
+        gap: 7px;
+    }
+
+    .card {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    article {
+        align-items: center;
+    }
+
+    article img {
+        width: 150px;
+    }
+
+    .article-text {
+        flex: 1;
+    }
+}

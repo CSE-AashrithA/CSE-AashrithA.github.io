@@ -1,80 +1,100 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #dbe9f4;
     color: #1f2d3d;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
 #content {
     background-color: white;
-    width: 75%;
-    max-width: 950px;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 10px;
     box-shadow: 3px 3px 10px #7c8a99;
+    margin: 30px auto;
+    max-width: 900px;
+    padding: 20px;
+    width: 90%;
 }
 
-header {
+#main-header {
     background-color: #1f4e79;
     color: white;
     padding: 20px;
     text-align: center;
-    border-radius: 8px;
 }
 
-header h1 {
+#main-header h1 {
     color: #f4c542;
-    margin-bottom: 8px;
+    font-size: 2em;
+    margin-bottom: 5px;
 }
 
-header h2 {
+#main-header p {
     margin-top: 0;
 }
 
-main {
-    padding: 10px;
-}
-
-p {
-    line-height: 1.5;
-}
-
-#repo-link a {
+main h2 {
     color: #1f4e79;
-    font-weight: bold;
-}
-
-#assignment-title {
-    color: #1f4e79;
-    margin-top: 30px;
-}
-
-#assignment-list {
-    list-style-type: none;
-    padding: 0;
-    width: 230px;
-}
-
-#assignment-list li {
-    margin: 12px 0;
-}
-
-#assignment-list a {
-    display: block;
-    background-color: #f4c542;
-    color: #1f2d3d;
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 1.5em;
     text-align: center;
+}
+
+.card {
+    background-color: #eef4fa;
+    border-top: 5px solid #f4c542;
+    margin: 10px auto;
+    padding: 12px;
+    width: 220px;
+}
+
+.card h3 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 0;
+    text-align: center;
+}
+
+.card h3 a {
+    color: #1f4e79;
     text-decoration: none;
+}
+
+.card img {
+    display: block;
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card p {
+    font-size: 0.95em;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+#projects {
+    margin-top: 35px;
 }
 
 footer {
     background-color: #1f4e79;
     color: white;
-    padding: 10px;
+    margin-top: 30px;
+    padding: 12px;
     text-align: center;
-    border-radius: 8px;
-    margin-top: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Large screen */
+@media (min-width: 1000px) {
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 10px;
+    }
 }
