@@ -1,0 +1,780 @@
+:root {
+    --garnet: #73000a;
+    --gray: #f1f1f1;
+    --text: #2f2f2f;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.page-width {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+#main-header {
+    background: #000;
+    color: var(--white);
+}
+
+#top-nav {
+    padding: 7px 0;
+    font-size: .7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#top-nav a {
+    padding: 0 10px;
+    border-right: 1px solid #aaa;
+    text-decoration: none;
+}
+
+#top-nav a:first-child {
+    padding-left: 0;
+}
+
+#top-nav a:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+#brand {
+    min-height: 108px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#usc-logo {
+    display: grid;
+    grid-template-columns: 66px auto;
+    grid-template-rows: 22px 42px;
+    column-gap: 12px;
+    width: 340px;
+    height: 66px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+#usc-logo img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 66px;
+    height: 66px;
+}
+
+#usc-logo span {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    font-family: Georgia, serif;
+    font-size: .72rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+#usc-logo strong {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    font-family: Georgia, serif;
+    font-size: 1.9rem;
+    font-weight: normal;
+    line-height: 1.05;
+    white-space: nowrap;
+}
+
+#brand h1 {
+    margin: 0;
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+#main-nav {
+    background: var(--garnet);
+    color: var(--white);
+}
+
+#main-nav ul,
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#main-nav ul {
+    width: 53%;
+    max-width: 900px;
+    margin: 0 7% 0 auto;
+}
+
+#main-nav li {
+    flex: 1;
+    text-align: center;
+}
+
+#main-nav a {
+    display: block;
+    padding: 15px 8px;
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-size: .95rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#hero img {
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+}
+
+#welcome {
+    padding: 48px 12%;
+    text-align: center;
+}
+
+#welcome p {
+    margin: 0;
+    font-size: 1.55rem;
+    font-weight: bold;
+}
+
+.image-section {
+    position: relative;
+    padding-bottom: 125px;
+}
+
+.image-section > img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+}
+
+.overlay-box {
+    position: absolute;
+    bottom: 0;
+    width: 49%;
+    min-height: 370px;
+    padding: 48px 55px;
+    background: var(--garnet);
+    box-shadow: 0 10px 17px rgba(0, 0, 0, .2);
+    color: var(--white);
+}
+
+.education .overlay-box {
+    right: 5%;
+}
+
+.research .overlay-box,
+.centers .overlay-box {
+    left: 5%;
+}
+
+.overlay-box h2 {
+    margin: 0 0 18px;
+    font-size: 3.3rem;
+    line-height: 1.1;
+}
+
+.overlay-box p {
+    font-size: 1.1rem;
+}
+
+.dark-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 28px;
+    background: #070707;
+    border: 2px solid var(--white);
+    box-shadow: 0 2px 4px #555;
+    color: var(--white);
+    font-size: .88rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#quote {
+    align-items: center;
+    gap: 65px;
+    padding: 35px 12% 95px;
+}
+
+#quote img {
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#quote p {
+    margin: 0;
+    color: var(--garnet);
+    font-family: Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+#quote span {
+    font-weight: bold;
+}
+
+#cards {
+    gap: 45px;
+    padding: 35px 9% 100px;
+}
+
+#cards article {
+    flex: 1;
+}
+
+#cards article img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+#cards h3 {
+    margin: 12px 0 8px;
+    color: var(--garnet);
+    font-size: 1.35rem;
+    line-height: 1.1;
+}
+
+#cards p {
+    margin: 0;
+}
+
+#connected {
+    padding: 70px 20px 80px;
+    background: var(--gray);
+    text-align: center;
+}
+
+#connected h2 {
+    margin: 0;
+    color: var(--garnet);
+    font-size: 3.25rem;
+    line-height: 1.2;
+}
+
+#connected p {
+    margin: 18px 0 45px;
+}
+
+#connected .columns {
+    justify-content: center;
+    gap: 65px;
+}
+
+#connected a {
+    min-width: 180px;
+    padding: 13px 20px;
+    background: var(--garnet);
+    border: 2px solid var(--white);
+    box-shadow: 0 2px 5px #999;
+    color: var(--white);
+    font-size: .84rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#school-footer {
+    padding: 44px 0 28px;
+    background: var(--gray);
+}
+
+#school-footer .page-width {
+    width: 94.5%;
+    max-width: none;
+    min-height: 190px;
+    align-items: center;
+    gap: 0;
+}
+
+#school-links {
+    display: flex;
+    flex: 0 0 48%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#school-links h2 {
+    flex-basis: 100%;
+    margin: 0 0 18px;
+    color: var(--garnet);
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 1.45rem;
+    line-height: 1.1;
+}
+
+#school-footer .dark-button {
+    margin: 0;
+    padding: 11px 25px;
+    font-size: .8rem;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-left: 32px;
+}
+
+.social-links a {
+    color: #8b4d53;
+    font-size: 1.75rem;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.social-links .facebook-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #8b4d53;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.35rem;
+}
+
+.footer-list {
+    display: flex;
+    flex: 0 0 33%;
+    align-self: center;
+    justify-content: flex-start;
+    gap: 130px;
+    padding: 10px 22px;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+
+.footer-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.footer-list li {
+    margin: 0;
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-size: .85rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.footer-list a,
+#school-footer address a {
+    color: var(--garnet);
+    text-decoration: none;
+}
+
+#school-footer address {
+    flex: 0 0 19%;
+    padding-left: 24px;
+    font-size: .95rem;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+#usc-footer {
+    padding: 30px 0 55px;
+    background: var(--garnet);
+    border-bottom: 2px solid var(--white);
+    color: var(--white);
+}
+
+.footer-top {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+
+#footer-logo {
+    display: grid;
+    grid-template-columns: 78px auto;
+    grid-template-rows: 25px 46px;
+    column-gap: 14px;
+    width: 420px;
+    height: 78px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+#footer-logo img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 78px;
+    height: 78px;
+}
+
+#footer-logo span {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    font-family: Georgia, serif;
+    font-size: .88rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+#footer-logo strong {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: normal;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.footer-social a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin-left: 16px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 1.4rem;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-columns {
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.colleges-footer {
+    flex: 3.2;
+}
+
+.offices-footer {
+    flex: 2.1;
+}
+
+.tools-footer {
+    flex: 1;
+}
+
+.footer-columns h3 {
+    margin: 0 0 14px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid white;
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.footer-link-groups {
+    display: grid;
+    gap: 35px;
+}
+
+.three-groups {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.two-groups {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-columns li {
+    margin-bottom: 9px;
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.tools-footer li {
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+.footer-columns a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+#copy-footer {
+    padding: 12px 0;
+    background: #000;
+    color: var(--white);
+    font-size: .72rem;
+    font-weight: bold;
+}
+
+#copy-footer a {
+    padding: 0 23px;
+    border-right: 1px solid #888;
+    letter-spacing: .1px;
+    text-decoration: none;
+}
+
+#copy-footer a:first-child {
+    padding-left: 0;
+}
+
+#copy-footer a:last-child {
+    border-right: 0;
+    padding-right: 0;
+}
+
+@media (min-width: 900px) {
+    .columns {
+        display: flex;
+    }
+}
+
+@media (max-width: 899px) {
+    #top-nav {
+        text-align: center;
+    }
+
+    #top-nav a {
+        display: inline-block;
+        margin: 3px 0;
+    }
+
+    #brand {
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    #brand h1 {
+        margin-top: 22px;
+        font-size: 2rem;
+    }
+
+    #main-nav ul {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    #main-nav li {
+        border-bottom: 1px solid #9d5057;
+    }
+
+    #main-nav a {
+        padding: 14px 20px;
+    }
+
+    #hero img,
+    .image-section > img {
+        height: 350px;
+    }
+
+    .image-section {
+        padding-bottom: 0;
+    }
+
+    .overlay-box {
+        position: static;
+        width: 100%;
+        min-height: 0;
+        padding: 38px 10%;
+    }
+
+    .overlay-box h2 {
+        font-size: 2.4rem;
+    }
+
+    #quote {
+        padding: 65px 8%;
+        text-align: center;
+    }
+
+    #quote > div {
+        position: relative;
+        padding: 35px 55px;
+    }
+
+    #quote > div::before {
+        content: "“";
+        position: absolute;
+        top: -65px;
+        left: -15px;
+        color: #d9d9dc;
+        font-family: Georgia, serif;
+        font-size: 12rem;
+        font-weight: bold;
+        line-height: 1;
+        z-index: -1;
+    }
+
+    #quote > div::after {
+        content: "”";
+        position: absolute;
+        right: -25px;
+        bottom: -100px;
+        color: #d9d9dc;
+        font-family: Georgia, serif;
+        font-size: 12rem;
+        font-weight: bold;
+        line-height: 1;
+        z-index: -1;
+    }
+
+    #quote p,
+    #quote span {
+        position: relative;
+        z-index: 1;
+    }
+
+    #quote img {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+
+    #quote p {
+        margin-top: 35px;
+        font-size: 1.45rem;
+    }
+
+    #cards {
+        padding: 55px 8%;
+    }
+
+    #cards article {
+        margin-bottom: 40px;
+    }
+
+    #connected .columns {
+        display: block;
+    }
+
+    #connected a {
+        display: block;
+        max-width: 330px;
+        margin: 15px auto;
+    }
+
+    #school-footer .page-width > * {
+        margin-bottom: 28px;
+    }
+
+    .footer-list {
+        display: block;
+        padding: 20px 0;
+        border: 0;
+        border-top: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
+    }
+
+    .footer-list ul {
+        margin-bottom: 17px;
+    }
+
+    .footer-columns section {
+        margin-top: 34px;
+    }
+
+    .footer-link-groups,
+    .three-groups,
+    .two-groups {
+        display: block;
+    }
+
+    .footer-link-groups ul {
+        margin-bottom: 0;
+    }
+
+    #copy-footer a {
+        display: inline-block;
+        margin: 3px 0;
+    }
+}
+#quote > div {
+    position: relative;
+    padding: 35px 55px;
+}
+
+#quote > div {
+    position: relative;
+}
+
+#quote > div::before {
+    content: "“";
+    position: absolute;
+    top: -30px;
+    left: -5px;
+    color: #d9d9dc;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12rem;
+    font-weight: bold;
+    line-height: 1;
+    z-index: 0;
+}
+
+#quote > div::after {
+    content: "”";
+    position: absolute;
+    right: 55px;
+    bottom: -85px;
+    color: #d9d9dc;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12rem;
+    font-weight: bold;
+    line-height: 1;
+    z-index: 0;
+}
+
+#quote p,
+#quote span {
+    position: relative;
+    z-index: 1;
+}
+
+.image-section {
+    padding-bottom: 65px;
+}
+
+.overlay-box {
+    min-height: 300px;
+    padding: 40px 55px;
+}
+
+.education .overlay-box {
+    right: 3%;
+}
+.centers .overlay-box {
+    left: 6.5%;
+    right: auto;
+    width: 35%;
+    min-height: 300px;
+}
