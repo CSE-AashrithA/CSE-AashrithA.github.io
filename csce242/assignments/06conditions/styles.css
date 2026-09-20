@@ -1,0 +1,180 @@
+:root {
+    --page-bg: #eef3f7;
+    --content-bg: #dce8ee;
+    --section-bg: #ffffff;
+    --main-color: #2c6171;
+    --accent-color: #c65d57;
+    --border-color: #8fb3c0;
+    --text-color: #253238;
+}
+
+body {
+    background-color: var(--page-bg);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+#content {
+    background-color: var(--content-bg);
+    margin: auto;
+    max-width: 850px;
+    padding: 25px;
+}
+
+#main-header {
+    position: relative;
+    text-align: center;
+}
+
+#main-header h1 {
+    color: var(--main-color);
+    font-size: 2.3em;
+    margin: 0;
+}
+
+#main-header p {
+    color: var(--accent-color);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 12px 0 22px;
+}
+
+#main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 0 25px;
+    padding: 0;
+}
+
+#main-nav li {
+    padding: 0 10px;
+}
+
+#main-nav li:not(:last-child)::after {
+    color: var(--main-color);
+    content: "|";
+    margin-left: 20px;
+}
+
+#main-nav a {
+    color: var(--main-color);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#main-nav a:hover {
+    color: var(--accent-color);
+}
+
+#menu-toggle {
+    background: none;
+    border: 0;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+    font-size: 1.4em;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.exercise {
+    background-color: var(--section-bg);
+    border: 2px solid var(--border-color);
+    box-sizing: border-box;
+    min-height: 230px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.exercise h2 {
+    color: var(--main-color);
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+.exercise label {
+    color: var(--main-color);
+    display: block;
+    font-size: 1.1em;
+    margin: 25px 0 10px;
+}
+
+#days-missed {
+    border: 1px solid var(--main-color);
+    font-size: 1em;
+    padding: 6px;
+    text-align: center;
+    width: 155px;
+}
+
+#deduction-message,
+#days-left {
+    color: var(--main-color);
+    font-weight: bold;
+    margin-top: 22px;
+}
+
+#attendance-message,
+#semester-message {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    color: var(--main-color);
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 0;
+    }
+
+    #content {
+        min-height: 100vh;
+        padding: 25px 15px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+        text-align: left;
+    }
+
+    #main-nav.show-menu {
+        display: block;
+    }
+
+    #main-nav ul {
+        display: block;
+        margin: 18px 0;
+    }
+
+    #main-nav li {
+        padding: 8px 0;
+    }
+
+    #main-nav li:not(:last-child)::after {
+        content: "";
+        margin: 0;
+    }
+
+    .exercise {
+        min-height: 270px;
+    }
+}
