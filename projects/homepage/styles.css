@@ -1,0 +1,468 @@
+:root {
+    --navy: #245584;
+    --butter-yellow: #fff275;
+    --gold: #f5c744;
+    --off-white: #f7f5f1;
+    --white: #ffffff;
+    --dark-text: #242424;
+    --gray-text: #666666;
+    --border: #e2e5e8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--dark-text);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+#main-header {
+    background-color: var(--white);
+}
+
+.header-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    padding: 25px 55px;
+}
+
+.logo {
+    color: var(--navy);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#main-nav ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav a {
+    color: var(--dark-text);
+}
+
+#main-nav a:hover {
+    color: var(--navy);
+}
+
+.contact-button,
+.blue-button,
+.yellow-button {
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 14px 20px;
+}
+
+.contact-button,
+.blue-button {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.yellow-button {
+    background-color: var(--gold);
+    color: var(--navy);
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    height: 700px;
+    object-fit: cover;
+    object-position: right top;
+}
+
+.hero-content {
+    left: 0;
+    max-width: 600px;
+    padding: 70px 55px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    color: var(--navy);
+    font-size: 3.3em;
+    line-height: 1.05;
+    margin: 0 0 22px;
+}
+
+.hero-content p {
+    font-size: 1.15em;
+    line-height: 1.5;
+    max-width: 510px;
+}
+
+/* Shared section styles */
+
+.performance-section,
+.nutrition-section {
+    margin: auto;
+    max-width: 1200px;
+    padding: 75px 55px;
+}
+
+.section-title span,
+.footer-title span {
+    background-color: var(--gold);
+    display: block;
+    height: 2px;
+    margin-bottom: 14px;
+    width: 48px;
+}
+
+.section-title h2,
+.footer-title h2 {
+    color: var(--navy);
+    font-size: 2.1em;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.three-columns,
+.two-columns {
+    display: flex;
+    gap: 28px;
+    margin-top: 42px;
+}
+
+/* Performance cards */
+
+.performance-card,
+.nutrition-card,
+.testimonial-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    box-shadow: 0 6px 13px rgba(20, 35, 50, 0.06);
+}
+
+.performance-card {
+    flex: 1;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.performance-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+/* Hydrate image only */
+
+.performance-card h3,
+.nutrition-card h3 {
+    color: var(--navy);
+    font-size: 1.15em;
+    margin: 18px 0 10px;
+}
+
+.performance-card p,
+.nutrition-card p {
+    color: var(--gray-text);
+    line-height: 1.5;
+    margin: 0 0 8px;
+}
+
+/* Game plan section */
+
+.plan-section {
+    align-items: center;
+    background-color: var(--off-white);
+    display: flex;
+    gap: 70px;
+    padding: 75px 10%;
+}
+
+.plan-content,
+.plan-section > img {
+    flex: 1;
+}
+
+.plan-section > img {
+    height: 620px;
+    object-fit: cover;
+}
+
+.plan-details {
+    margin: 35px 0;
+}
+
+.plan-details h3 {
+    color: var(--navy);
+    font-size: 1.05em;
+    margin: 25px 0 7px;
+}
+
+.plan-details p {
+    line-height: 1.5;
+    margin: 0;
+    max-width: 390px;
+}
+
+.plan-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+/* Nutrition cards */
+
+.nutrition-card {
+    flex: 1;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.nutrition-card img {
+    height: 235px;
+    object-fit: cover;
+}
+
+/* Testimonials */
+
+.testimonial-section {
+    background-color: var(--off-white);
+    padding: 75px 10%;
+}
+
+.testimonial-section .three-columns {
+    margin: 42px auto 0;
+    max-width: 1090px;
+}
+
+.testimonial-section .section-title {
+    margin: auto;
+    max-width: 1090px;
+}
+
+.testimonial-card {
+    flex: 1;
+    padding: 26px 23px;
+}
+
+.testimonial-card > p {
+    color: var(--navy);
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1.45;
+    margin: 0 0 36px;
+}
+
+.student {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+}
+
+.student img {
+    border-radius: 50%;
+    height: 34px;
+    object-fit: cover;
+    width: 34px;
+}
+
+.student h3 {
+    font-size: 0.8em;
+    margin: 0 0 3px;
+}
+
+.student span {
+    font-size: 0.75em;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 68px 10% 50px;
+}
+
+.footer-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1090px;
+}
+
+.footer-title {
+    max-width: 500px;
+}
+
+.footer-title h2 {
+    color: var(--white);
+    font-size: 2.4em;
+}
+
+.footer-buttons {
+    align-items: center;
+    display: flex;
+    gap: 25px;
+}
+
+.footer-buttons > a:first-child {
+    color: var(--white);
+    font-size: 1.1em;
+}
+
+.footer-line {
+    background-color: var(--gold);
+    height: 1px;
+    margin: 38px auto;
+    max-width: 1090px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1090px;
+}
+
+.footer-links > div:first-child {
+    max-width: 300px;
+}
+
+.footer-links h3 {
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.footer-links h4 {
+    font-size: 0.85em;
+    margin-top: 0;
+}
+
+.footer-links p,
+.footer-links a {
+    color: var(--white);
+    display: block;
+    font-size: 0.85em;
+    line-height: 1.7;
+    margin: 0 0 9px;
+}
+
+/* Smaller screens */
+
+@media (max-width: 700px) {
+    .header-content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        padding: 23px 25px;
+    }
+
+    #main-nav ul {
+        gap: 20px;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .hero img {
+        height: 530px;
+        object-position: right top;
+    }
+
+    .hero-content {
+        padding: 55px 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.55em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .performance-section,
+    .nutrition-section,
+    .testimonial-section {
+        padding: 58px 25px;
+    }
+
+    .section-title h2,
+    .footer-title h2 {
+        font-size: 1.9em;
+    }
+
+    .three-columns,
+    .two-columns,
+    .plan-section,
+    .footer-top,
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .three-columns,
+    .two-columns {
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .performance-card,
+    .nutrition-card,
+    .testimonial-card {
+        width: 100%;
+    }
+
+    .performance-card img,
+    .performance-card:nth-child(2) img {
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .plan-section {
+        gap: 35px;
+        padding: 58px 25px;
+    }
+
+    .plan-section > img {
+        height: auto;
+        width: 100%;
+    }
+
+    footer {
+        padding: 55px 25px 35px;
+    }
+
+    .footer-top,
+    .footer-links {
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .footer-buttons {
+        gap: 18px;
+    }
+}
