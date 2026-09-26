@@ -13,6 +13,8 @@ body {
     border-bottom: 5px solid white;
 }
 
+/* Used CSS-Tricks to learn about repeating linear gradients:
+https://css-tricks.com/stripes-css/ */
 #middle-line {
     position: absolute;
     top: 87px;
