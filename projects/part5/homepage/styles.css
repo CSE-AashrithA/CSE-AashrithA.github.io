@@ -92,28 +92,33 @@ a {
 }
 
 .hero img {
-    height: 700px;
+    height: 620px;
     object-fit: cover;
     object-position: right top;
 }
 
 .hero-content {
     left: 0;
-    max-width: 600px;
-    padding: 70px 55px;
     position: absolute;
     top: 0;
+    width: 100%;
     z-index: 1;
 }
 
-.hero-content h1 {
+.hero-text {
+    margin: auto;
+    max-width: 1200px;
+    padding: 70px 55px;
+}
+
+.hero-text h1 {
     color: var(--navy);
     font-size: 3.3em;
     line-height: 1.05;
     margin: 0 0 22px;
 }
 
-.hero-content p {
+.hero-text p {
     font-size: 1.15em;
     line-height: 1.5;
     max-width: 510px;
@@ -193,19 +198,25 @@ a {
 /* Game plan section */
 
 .plan-section {
-    align-items: center;
     background-color: var(--off-white);
+    padding: 75px 0;
+}
+
+.plan-layout {
+    align-items: center;
     display: flex;
     gap: 70px;
-    padding: 75px 10%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 55px;
 }
 
 .plan-content,
-.plan-section > img {
+.plan-layout > img {
     flex: 1;
 }
 
-.plan-section > img {
+.plan-layout > img {
     height: 620px;
     object-fit: cover;
 }
@@ -393,15 +404,15 @@ footer {
         object-position: right top;
     }
 
-    .hero-content {
+    .hero-text {
         padding: 55px 25px;
     }
-
-    .hero-content h1 {
+    
+    .hero-text h1 {
         font-size: 2.55em;
     }
-
-    .hero-content p {
+    
+    .hero-text p {
         font-size: 1em;
     }
 
@@ -443,11 +454,15 @@ footer {
     }
 
     .plan-section {
-        gap: 35px;
-        padding: 58px 25px;
+        padding: 58px 0;
     }
-
-    .plan-section > img {
+    
+    .plan-layout {
+        gap: 35px;
+        padding: 0 25px;
+    }
+    
+    .plan-layout > img {
         height: auto;
         width: 100%;
     }

@@ -81,7 +81,7 @@ a {
 }
 
 .hero img {
-    height: 520px;
+    height: 600px;
     object-fit: cover;
     object-position: right center;
 }
