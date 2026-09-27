@@ -1,0 +1,342 @@
+:root {
+    --navy: #245584;
+    --butter-yellow: #fff275;
+    --gold: #f5c744;
+    --off-white: #f7f5f1;
+    --white: #ffffff;
+    --dark-text: #242424;
+    --gray-text: #666666;
+    --border: #e2e5e8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--dark-text);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+#main-header {
+    background-color: var(--white);
+}
+
+.header-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    padding: 25px 55px;
+}
+
+.logo {
+    color: var(--navy);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#main-nav ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav a {
+    color: var(--dark-text);
+}
+
+#main-nav a:hover {
+    color: var(--navy);
+}
+
+.contact-button,
+.blue-button,
+.yellow-button {
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 14px 20px;
+}
+
+.contact-button,
+.blue-button {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.yellow-button {
+    background-color: var(--gold);
+    color: var(--navy);
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    height: 620px;
+    object-fit: cover;
+    object-position: right center;
+}
+
+.hero-content {
+    left: 0;
+    max-width: 620px;
+    padding: 90px 55px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    color: var(--navy);
+    font-size: 3.2em;
+    line-height: 1.1;
+    margin: 0 0 22px;
+}
+
+.hero-content p {
+    font-size: 1.15em;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    max-width: 500px;
+}
+
+/* Shared styles */
+
+.basics-section,
+.guide-section {
+    margin: auto;
+    max-width: 1200px;
+    padding: 75px 55px;
+}
+
+.section-title span {
+    background-color: var(--gold);
+    display: block;
+    height: 2px;
+    margin-bottom: 14px;
+    width: 48px;
+}
+
+.section-title h2 {
+    color: var(--navy);
+    font-size: 2.1em;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.section-intro {
+    color: var(--gray-text);
+    line-height: 1.5;
+    margin: 20px 0 38px;
+    max-width: 700px;
+}
+
+.three-columns,
+.four-columns {
+    display: flex;
+    gap: 25px;
+}
+
+.basic-card,
+.guide-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    box-shadow: 0 5px 12px rgba(20, 35, 50, 0.06);
+}
+
+/* Nutrition basics */
+
+.basic-card {
+    flex: 1;
+    padding: 23px 20px;
+}
+
+.basic-card h3,
+.guide-card h3,
+.featured-content h3 {
+    color: var(--navy);
+    font-size: 1.15em;
+    margin: 0 0 10px;
+}
+
+.basic-card p,
+.guide-card p,
+.featured-content p {
+    color: var(--gray-text);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Featured section */
+
+.featured-section {
+    align-items: center;
+    background-color: var(--off-white);
+    display: flex;
+    gap: 65px;
+    padding: 75px 10%;
+}
+
+.featured-content,
+.featured-image {
+    flex: 1;
+}
+
+.featured-content h3 {
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+
+.featured-content p {
+    margin: 0 0 28px;
+    max-width: 450px;
+}
+
+.featured-image img {
+    height: 390px;
+    object-fit: cover;
+}
+
+/* Guides */
+
+.guide-card {
+    flex: 1;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.guide-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.guide-card h3 {
+    margin: 18px 0 10px;
+}
+
+.guide-card p {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 45px 10%;
+}
+
+.footer-content {
+    margin: auto;
+    max-width: 1090px;
+}
+
+.footer-content h2 {
+    margin: 0 0 12px;
+}
+
+.footer-content p {
+    margin: 0 0 18px;
+}
+
+.footer-content a {
+    color: var(--butter-yellow);
+    font-weight: bold;
+}
+
+/* Smaller screens */
+
+@media (max-width: 700px) {
+    .header-content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        padding: 23px 25px;
+    }
+
+    #main-nav ul {
+        gap: 20px;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .hero img {
+        height: 530px;
+    }
+
+    .hero-content {
+        padding: 55px 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .basics-section,
+    .guide-section {
+        padding: 58px 25px;
+    }
+
+    .section-title h2 {
+        font-size: 1.9em;
+    }
+
+    .three-columns,
+    .four-columns,
+    .featured-section {
+        flex-direction: column;
+    }
+
+    .three-columns,
+    .four-columns {
+        gap: 20px;
+    }
+
+    .featured-section {
+        gap: 35px;
+        padding: 58px 25px;
+    }
+
+    .featured-image {
+        width: 100%;
+    }
+
+    .featured-image img {
+        height: 280px;
+    }
+
+    .guide-card img {
+        height: 250px;
+    }
+
+    footer {
+        padding: 40px 25px;
+    }
+}
