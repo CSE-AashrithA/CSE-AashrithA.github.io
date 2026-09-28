@@ -41,12 +41,21 @@ a {
     margin: auto;
     max-width: 1200px;
     padding: 25px 55px;
+    position: relative;
 }
 
 .logo {
     color: var(--navy);
     font-size: 1.2em;
     font-weight: bold;
+}
+#arrow {
+    background-color: transparent;
+    border: 0;
+    color: var(--navy);
+    cursor: pointer;
+    display: none;
+    font-size: 1.6em;
 }
 
 #main-nav ul {
@@ -397,6 +406,21 @@ footer {
 
     .contact-button {
         display: none;
+    }
+    #arrow {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 18px;
+    }
+    
+    #main-nav {
+        display: none;
+        width: 100%;
+    }
+    
+    #main-nav.show {
+        display: block;
     }
 
     .hero img {

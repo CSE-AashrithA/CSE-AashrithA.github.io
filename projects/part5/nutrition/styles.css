@@ -48,6 +48,14 @@ a {
     font-size: 1.2em;
     font-weight: bold;
 }
+#arrow {
+    background-color: transparent;
+    border: 0;
+    color: var(--navy);
+    cursor: pointer;
+    display: none;
+    font-size: 1.6em;
+}
 
 #main-nav ul {
     display: flex;
@@ -273,6 +281,23 @@ footer {
         flex-direction: column;
         gap: 18px;
         padding: 23px 25px;
+        position: relative;
+    }
+    
+    #arrow {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 18px;
+    }
+
+    #main-nav {
+        display: none;
+        width: 100%;
+    }
+
+    #main-nav.show {
+        display: block;
     }
 
     #main-nav ul {
