@@ -250,6 +250,10 @@ a {
     background-color: var(--white);
 }
 
+.tips-section .three-columns {
+    margin-top: 55px;
+}
+
 .tip-card {
     flex: 1;
     padding: 24px 20px;

@@ -294,6 +294,10 @@ footer {
     font-weight: bold;
 }
 
+.guide-section .three-columns {
+    margin-top: 55px;
+}
+
 /* Smaller screens */
 
 @media (max-width: 700px) {
