@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5efe3;
+    color: #28536b;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#content {
+    background-color: #fffaf0;
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 25px;
+    width: 90%;
+}
+
+header {
+    background-color: #6b4f3b;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main h2 {
+    color: #6b4f3b;
+    text-align: center;
+}
+
+#vacation-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.vacation-card {
+    background-color: white;
+    border: 1px solid #a8c4d1;
+    cursor: pointer;
+    text-align: center;
+    width: 260px;
+}
+
+.vacation-card h3 {
+    background-color: #28536b;
+    color: white;
+    margin: 0;
+    padding: 12px;
+}
+
+.vacation-card p {
+    color: #4f7485;
+    margin: 10px;
+}
+
+.vacation-card img {
+    display: block;
+    height: 170px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.vacation-card:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    color: #28536b;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Modal */
+
+#vacation-modal {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#vacation-modal.hidden {
+    display: none;
+}
+
+#modal-content {
+    background-color: white;
+    max-width: 800px;
+    padding: 25px;
+    position: relative;
+    width: 80%;
+}
+
+#close-modal {
+    background-color: #28536b;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 8px 12px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+#modal-info {
+    display: flex;
+    gap: 25px;
+}
+
+#modal-info > div {
+    width: 50%;
+}
+
+#modal-info img,
+#modal-info iframe {
+    height: 280px;
+    width: 50%;
+}
+
+#modal-info iframe {
+    border: 1px solid #a8c4d1;
+}
+
+#modal-info h2 {
+    color: #28536b;
+    margin-top: 0;
+}
+
+#modal-info p {
+    line-height: 1.5;
+}
+
+/* Smaller screens */
+
+@media (max-width: 700px) {
+    #content {
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .vacation-card {
+        width: 90%;
+    }
+
+    #modal-content {
+        width: 90%;
+    }
+
+    #modal-info {
+        flex-direction: column;
+    }
+
+    #modal-info > div {
+        width: 100%;
+    }
+
+    #modal-info iframe {
+        height: 220px;
+        width: 100%;
+    }
+}
