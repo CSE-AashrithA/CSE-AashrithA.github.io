@@ -45,9 +45,18 @@ a {
 }
 
 .logo {
+    align-items: center;
     color: var(--navy);
+    display: flex;
     font-size: 1.2em;
     font-weight: bold;
+    gap: 8px;
+}
+
+.logo-image {
+    height: 38px;
+    object-fit: contain;
+    width: 38px;
 }
 #arrow {
     background-color: transparent;
