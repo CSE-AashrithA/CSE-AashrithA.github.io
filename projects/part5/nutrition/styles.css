@@ -214,11 +214,17 @@ a {
 /* Featured section */
 
 .featured-section {
-    align-items: center;
     background-color: var(--off-white);
+    padding: 75px 0;
+}
+
+.featured-layout {
+    align-items: center;
     display: flex;
     gap: 65px;
-    padding: 75px 10%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 55px;
 }
 
 .featured-content,
@@ -350,7 +356,7 @@ footer {
 
     .three-columns,
     .four-columns,
-    .featured-section {
+    .featured-layout {
         flex-direction: column;
     }
 
@@ -360,8 +366,12 @@ footer {
     }
 
     .featured-section {
+        padding: 58px 0;
+    }
+    
+    .featured-layout {
         gap: 35px;
-        padding: 58px 25px;
+        padding: 0 25px;
     }
 
     .featured-image {
