@@ -73,7 +73,16 @@ main h2 {
 #projects {
     margin-top: 35px;
 }
+.server-links {
+    text-align: center;
+}
 
+.server-links a {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Footer */
 footer {
     background-color: #1f4e79;
     color: white;
