@@ -295,7 +295,12 @@ footer {
 }
 
 .guide-section .three-columns {
+    flex-wrap: wrap;
     margin-top: 55px;
+}
+
+.guide-section .guide-card {
+    flex: 0 0 calc((100% - 50px) / 3);
 }
 
 /* Smaller screens */
@@ -388,6 +393,11 @@ footer {
 
     .guide-card img {
         height: 250px;
+    }
+
+    .guide-section .guide-card {
+        flex: 1;
+        width: 100%;
     }
 
     footer {

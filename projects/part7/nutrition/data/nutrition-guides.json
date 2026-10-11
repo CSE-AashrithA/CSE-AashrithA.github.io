@@ -1,0 +1,74 @@
+[
+    {
+        "_id": 1,
+        "title": "Quick Breakfast Fuel",
+        "category": "Breakfast",
+        "description": "A balanced breakfast can help you start classes and training with steady energy.",
+        "best_time": "Morning",
+        "benefit": "Supports energy and focus",
+        "img_name": "breakfast.jpg"
+    },
+    {
+        "_id": 2,
+        "title": "Between-Class Snacks",
+        "category": "Snacks",
+        "description": "Easy snacks can keep you fueled when you have a long day between classes and practice.",
+        "best_time": "Midday",
+        "benefit": "Prevents low energy",
+        "img_name": "snacks.jpg"
+    },
+    {
+        "_id": 3,
+        "title": "Post-Workout Meals",
+        "category": "Recovery",
+        "description": "A meal with protein and carbohydrates helps your body recover after a hard workout.",
+        "best_time": "After training",
+        "benefit": "Supports muscle recovery",
+        "img_name": "recovery-meal.jpg"
+    },
+    {
+        "_id": 4,
+        "title": "Pre-Game Fuel",
+        "category": "Performance",
+        "description": "Choose familiar foods with carbohydrates before competition for reliable energy.",
+        "best_time": "Before a game",
+        "benefit": "Helps you feel prepared",
+        "img_name": "pre-game-fuel.jpg"
+    },
+    {
+        "_id": 5,
+        "title": "Hydration Habits",
+        "category": "Hydration",
+        "description": "Drinking water throughout the day helps you stay ready for workouts and practice.",
+        "best_time": "All day",
+        "benefit": "Supports performance",
+        "img_name": "hydration.jpg"
+    },
+    {
+        "_id": 6,
+        "title": "Balanced Lunch Ideas",
+        "category": "Meals",
+        "description": "A balanced lunch with protein, carbohydrates, and vegetables can carry you through a busy afternoon.",
+        "best_time": "Lunch",
+        "benefit": "Provides lasting energy",
+        "img_name": "balanced-lunch.jpg"
+    },
+    {
+        "_id": 7,
+        "title": "Smoothie Recovery",
+        "category": "Recovery",
+        "description": "A fruit and protein smoothie is a quick option when you need something after training.",
+        "best_time": "After training",
+        "benefit": "Easy recovery option",
+        "img_name": "smoothie.jpg"
+    },
+    {
+        "_id": 8,
+        "title": "Evening Meal Planning",
+        "category": "Meals",
+        "description": "Planning a simple dinner can help you refuel and prepare for the next day.",
+        "best_time": "Evening",
+        "benefit": "Supports next-day readiness",
+        "img_name": "dinner.jpg"
+    }
+]

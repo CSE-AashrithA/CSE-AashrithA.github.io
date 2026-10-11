@@ -289,6 +289,32 @@ footer {
     font-weight: bold;
 }
 
+/* Training location */
+
+.training-location-section {
+    align-items: center;
+    background-color: var(--off-white);
+    display: flex;
+    gap: 60px;
+    padding: 75px 10%;
+}
+
+.training-location-content,
+.training-location-section iframe {
+    flex: 1;
+}
+
+.training-location-content p {
+    color: var(--gray-text);
+    line-height: 1.5;
+    max-width: 450px;
+}
+
+.training-location-section iframe {
+    border: 0;
+    height: 360px;
+}
+
 /* Smaller screens */
 
 @media (max-width: 700px) {
@@ -370,6 +396,17 @@ footer {
 
     .workout-card img {
         height: 250px;
+    }
+
+    .training-location-section {
+        flex-direction: column;
+        gap: 30px;
+        padding: 58px 25px;
+    }
+    
+    .training-location-section iframe {
+        height: 280px;
+        width: 100%;
     }
 
     footer {
