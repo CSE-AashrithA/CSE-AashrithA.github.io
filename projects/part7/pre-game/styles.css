@@ -92,6 +92,15 @@ a {
     padding: 14px 20px;
 }
 
+.yellow-button {
+    background-color: var(--gold);
+    border-radius: 5px;
+    color: var(--navy);
+    display: inline-block;
+    font-weight: bold;
+    padding: 14px 20px;
+}
+
 /* Hero */
 
 .hero {
