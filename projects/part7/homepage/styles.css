@@ -272,6 +272,7 @@ a {
 }
 
 .plan-layout > img {
+    border-radius: 12px;
     height: 620px;
     object-fit: cover;
 }
@@ -314,17 +315,19 @@ a {
 
 .testimonial-section {
     background-color: var(--off-white);
-    padding: 75px 10%;
+    padding: 75px 0;
 }
 
 .testimonial-section .three-columns {
     margin: 42px auto 0;
-    max-width: 1090px;
+    max-width: 1200px;
+    padding: 0 55px;
 }
 
 .testimonial-section .section-title {
     margin: auto;
-    max-width: 1090px;
+    max-width: 1200px;
+    padding: 0 55px;
 }
 
 .testimonial-card {
@@ -562,4 +565,9 @@ footer {
     .footer-buttons {
         gap: 18px;
     }
+    
+    .testimonial-section .three-columns,
+.testimonial-section .section-title {
+    padding: 0;
+}
 }

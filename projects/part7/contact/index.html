@@ -66,25 +66,29 @@
                     </div>
                 </div>
 
-                <form>
+                <form id="contact-form">
+                    <input type="hidden" name="access_key" value="a8ed02b8-0028-4704-9a48-e8aad30c00a5">
+                
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your name">
-
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Your email">
-
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                
                     <label for="topic">What do you need help with?</label>
-                    <select id="topic">
+                    <select id="topic" name="topic" required>
+                        <option value="">Choose a topic</option>
                         <option>Nutrition</option>
                         <option>Workouts</option>
                         <option>Recovery</option>
                         <option>General Question</option>
                     </select>
-
+                
                     <label for="message">Message</label>
-                    <textarea id="message" placeholder="Write your message"></textarea>
-
-                    <button type="button">Send Message</button>
+                    <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+                
+                    <button type="submit">Send Message</button>
+                    <p id="form-result"></p>
                 </form>
             </section>
 
@@ -107,11 +111,46 @@
             </section>
         </main>
 
-        <footer>
-            <div class="footer-content">
-                <h2>FitGuide</h2>
-                <p>Nutrition and training support for college athletes.</p>
-                <a href="../homepage/index.html">Back to Home</a>
+        <footer id="contact">
+            <section class="footer-top">
+                <div class="footer-title">
+                    <span></span>
+                    <h2>Ready to build your better routine?</h2>
+                </div>
+        
+                <div class="footer-buttons">
+                    <a href="index.html">Contact us</a>
+                    <a class="yellow-button" href="../workouts/index.html">
+                        Browse Workouts
+                    </a>
+                </div>
+            </section>
+        
+            <div class="footer-line"></div>
+        
+            <div class="footer-links">
+                <div>
+                    <h3>FITGUIDE</h3>
+                    <p>Nutrition and training support for college athletes.</p>
+                </div>
+        
+                <div>
+                    <h4>Explore</h4>
+                    <a href="../nutrition/index.html">Nutrition</a>
+                    <a href="../workouts/index.html">Workouts</a>
+                    <a href="../pre-game/index.html">Pre-Game Fuel</a>
+                </div>
+        
+                <div>
+                    <h4>Support</h4>
+                    <a href="../homepage/index.html">Home</a>
+                    <a href="index.html">Contact</a>
+                </div>
+        
+                <div>
+                    <h4>Connect</h4>
+                    <a href="mailto:fitguide@email.sc.edu">Email</a>
+                </div>
             </div>
         </footer>
         <script src="script.js"></script>
