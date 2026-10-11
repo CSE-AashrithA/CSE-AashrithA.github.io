@@ -13,7 +13,7 @@ const toggleMenu = () => {
 
 arrow.onclick = toggleMenu;
 const guidesUrl =
-    "https://cse-aashritha.github.io/projects/part7/nutrition/data/nutrition-guides.json";
+    "https://cse-aashritha.github.io/projects/part7/nutrition/json/nutrition-guides.json";
 
 const getGuides = async () => {
     const response = await fetch(guidesUrl);
